@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-cabecera">
+            <a class="img-cabecera"><img src="../media/logo-cabecera.svg" alt=""></a>
+            <div class="container-icons" id="container-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons list-icon" id="list-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons close-icon" id="close-icon" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.php" class="menu">Inicio</a></li>
+                <li><a href="proyectos.php" class="menu">Proyectos</a></li>
+                <li><a href="#" class="menu">Artículos</a></li>
+                <li><a href="#" class="menu">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="section-body">
+        <section class="section-form">
+            <form action="lectura.php" method="post" autocomplete="on">
+                <h1>Contacto</h1>
+                <div class="group-form">
+                    <div class="form-group">
+                        <label>Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required="required">
+                    </div>
+    
+                    <div class="col-form">
+                        <label>Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required="required">
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Asunto *</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required="required">
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Mensaje *</label>
+                        <textarea name="mensaje" id="mensaje" required="required" class="form-control" rows="8"></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="submit" id="submit" name="submit" class="btn btn-primary btn-lg" value="Enviar" />
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <footer>
+        <div class="col-footer">
+            <img class="logo-footer" src="../media/logo-cabecera.svg" alt="logo footer">
+        </div>
+    
+        <div class="col-footer">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.php" class="menu">Inicio</a></li>
+                <li><a href="proyectos.php" class="menu">Proyectos</a></li>
+                <li><a href="#" class="menu">Artículos</a></li>
+                <li><a href="#" class="menu">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="col-footer">
+            <ul class="main-footer-2">
+                <li><a href="https://www.linkedin.com/in/alba-s%C3%A1nchez-olmedo-8a3a412a9/"><img src="../media/logo-linkedin.png" alt="">Linkedin</a></li>
+                <li><a href="https://github.com/albasanchez00"><img src="../media/logo-github.png" alt="">Github</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
